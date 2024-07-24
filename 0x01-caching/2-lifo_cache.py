@@ -5,7 +5,7 @@ Build a caching system, use the LIFO cache algorithm
 BaseCaching = __import__("base_caching").BaseCaching
 
 
-class FIFOCache(BaseCaching):
+class LIFOCache(BaseCaching):
     """
     Using the LIFO cache algorithm, build a caching system
     """
