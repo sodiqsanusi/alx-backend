@@ -19,7 +19,7 @@ class LRUCache(BaseCaching):
 
     def put(self, key, item):
         """
-        Adds an item to the cache. uses the LIFO caching algo
+        Adds an item to the cache. uses the LRU caching algo
         """
         if key and item:
             if key in self.cache_data:
