@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Build a caching system, use the LRU cache algorithm
+Build a caching system, use the LFU cache algorithm
 """
 from collections import OrderedDict
 BaseCaching = __import__("base_caching").BaseCaching
 
 
-class LRUCache(BaseCaching):
+class LFUCache(BaseCaching):
     """
-    Using the LRU cache algorithm, build a caching system
+    Using the LFU cache algorithm, build a caching system
     """
     def __init__(self):
         """
@@ -19,7 +19,7 @@ class LRUCache(BaseCaching):
 
     def put(self, key, item):
         """
-        Adds an item to the cache. uses the LRU caching algo
+        Adds an item to the cache. uses the LFU caching algo
         """
         if key and item:
             if key in self.cache_data:
